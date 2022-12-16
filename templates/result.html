@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bike Rental Details</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="banner">
+            <div class = "logo">
+                <h1>Bike Rental details</h1>
+            </div>
+            <div class = tables>
+
+                <table>
+                    <tr>
+                        {% for header in headings %}
+                        <th> {{ header }}</th>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        {% for cell in data %}
+                        <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                </table>
+
+            </div>
+            <div class="indexlink" >
+                <a href={{url_for("index")}}>Click here to go for main page</a>
+            </div>
+        </div>
+
+    </body>
+</html>

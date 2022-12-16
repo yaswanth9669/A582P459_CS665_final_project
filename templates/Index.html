@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bike Rentals DBMS Project</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+
+    <body>
+
+        <div class="banner">
+            <div class = "logo">
+                <h1>Tirumala Bike Rentals</h1>
+            </div>
+            <div class="bike_details">
+                <form action="{{ url_for("index")}}" method="post">
+                    <label style="color:aliceblue">Bike ID: </label><br>
+                    <input type = "text" name = "bikeid" placeholder = "Please enter bike_id" id = "bikeid" ><br>
+                    <label style="color:aliceblue">Shop Name: </label><br>
+                    <input type = "text" name = "shopname" placeholder = "Please enter name of the shop" id = "shopname" ><br>
+                    <label style="color:aliceblue">User id: </label><br>
+                    <input type = "text" name = "userid" placeholder = "Please enter user_id" id = "userid" ><br>
+                    <label style="color:aliceblue">Name of the brand: </label><br>
+                    <input type = "text" name = "brandname" placeholder = "Please enter name of the brand" id = "brandname" ><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+
+
+        </div>
+    </body>
+
+</html>
